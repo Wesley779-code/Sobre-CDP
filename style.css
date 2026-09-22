@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F8F9FA;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 70px;
+    width: 100%;
+    background: #1B4332;
+    border-bottom: #143225;
+    margin-bottom: 35px;
+}
+
+header h1 {
+    color: #FFFFFF;
+    user-select: none;
+    font-family: "Inter";
+}
+
+.castelo {
+    color: #2D6A4F;
+}
+
+.pi {
+    color: #D97706;
+}
+
+.menu-links {
+    display: flex;
+    gap: 10px;
+}
+
+.menu-links a {
+    color: #1B4332;
+    text-decoration: none;
+    padding: 13px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    font-weight: 700;
+    user-select: none;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.menu-links a:hover {
+    transform: translateY(-1px) scale(0.99);
+    opacity: 0.95;
+}
+
+.container-inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    width: 100%;
+}
+
+.card-inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #FFFFFF;
+    width: 60%;
+    border-radius: 10px;
+    border: 2px solid #E5E7EB;
+}
+
+.card-inicio h2 {
+    margin-bottom: 10px;
+    font-size: 33px;
+    font-family: "Playfair Display SC";
+    font-weight: 600;
+    color: #111827;
+}
+
+.card-inicio img {
+    width: 100%;
+    padding: 16px;
+    object-fit: cover;
+}
+
+.sobre-p {
+    padding: 7px;
+}
+
+.sobre {
+    padding: 10px;
+    background: #2D6A4F;
+    width: 100%;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    line-height: 1.5;
+    font-size: 17px;
+    font-family: sans-serif;
+}
+
+.container-sobre-pric {
+    padding: 40px;
+}
+.container-sobre-pric h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #1B4332;
+    font-family: "Playfair Display SC";
+    font-weight: 700;
+}
+
+.sobre-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card-sobre-historia {
+    background: #E8F5E9;
+    color: #1B4332;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #C8E6C9;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card-sobre-natureza {
+    background: #E0F2FE;
+    color: #0369A1;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #BAE6FD;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card-sobre-turismo {
+    background: #FEF3C7;
+    color: #B45309;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #FDE68A;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card-sobre-historia h3, .card-sobre-natureza h3, .card-sobre-turismo h3 {
+    font-size: 23px;
+}
+
+.card-sobre-historia p, .card-sobre-natureza p, .card-sobre-turismo p {
+    font-size: 18px;
+    font-family: sans-serif;
+    padding: 8px;
+}
+
+.container-pontos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    align-items: start;
+    width: 100%;
+}
+
+.card-pontos {
+    background: #FFFFFF;
+    color: #111827;
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card-pontos:hover, .card-sobre-historia:hover, .card-sobre-natureza:hover, .card-sobre-turismo:hover {
+    transform: translateY(5px) scale(0.98);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card-pontos img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    padding: 10px;
+    display: block;
+    box-sizing: border-box;
+}
+
+.card-pontos h3 {
+    font-size: 23px;
+    color: #1B4332;
+}
+
+.card-pontos p {
+    padding: 10px;
+    background: #F9FAFB;
+    color: #374151;
+    height: 140px;
+    border-radius: 6px;
+}
+
+footer {
+    width: 100%;
+    background: #143225;
+    padding: 10px;
+    color: #FFFFFF;
+    margin-top: auto;
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: #E2E8F0;
+    text-align: center;
+    font-family: "Inter";
+    font-weight: 400;
+    line-height: 1.5;
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+    header h1 {
+        font-size: 24px;
+    }
+    .menu-links {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 6px;
+    }
+    .menu-links a {
+        padding: 8px 10px;
+        font-size: 14px;
+        min-width: auto;
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+    .container-sobre-pric {
+        padding: 20px;
+    }
+    .container-inicio {
+        padding: 20px;
+    }
+    .card-inicio {
+        width: 100%;
+        padding: 7px;
+    }
+    .sobre-container {
+        grid-template-columns: 1fr;
+    }
+    .container-pontos {
+        grid-template-columns: 1fr;
+    }
+    .card-pontos p {
+        height: 165px;
+    }
+}
