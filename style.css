@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=UnifrakturMaguntia&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -89,7 +89,7 @@ header h1 {
 .card-inicio h2 {
     margin-bottom: 10px;
     font-size: 33px;
-    font-family: "Playfair Display SC";
+    font-family: "UnifrakturMaguntia";
     font-weight: 600;
     color: #111827;
 }
