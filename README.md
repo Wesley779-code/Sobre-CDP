@@ -1,1 +1,0 @@
-![Visitas](https://seeyoufarm.com)
